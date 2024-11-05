@@ -1,6 +1,0 @@
-site_name: 'VKOSTYA lab'  
-docs_dir: docs
-nav:  
-  - Главная: index.md
-  - Обо мне: about/index.md
-  - Контакты: contact/index.md
