@@ -1,6 +1,6 @@
-site_name: 'VKOSTYA lab'  # Название сайта
+site_name: 'VKOSTYA lab'  
 docs_dir: docs
-nav:  # Настройка навигации
+nav:  
   - Главная: index.md
   - Обо мне: about/index.md
   - Контакты: contact/index.md
