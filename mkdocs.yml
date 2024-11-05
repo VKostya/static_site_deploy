@@ -4,5 +4,3 @@ nav:  # Настройка навигации
   - Главная: index.md
   - Обо мне: about/index.md
   - Контакты: contact/index.md
-theme:
-  name: material  # Тема оформления
