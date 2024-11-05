@@ -1,0 +1,30 @@
+name: Build VKOSTYA static site
+
+on:
+  push:
+
+jobs:
+  build:
+    name: Build n deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: python setup
+        uses: actions/setup-puthon@v4
+        with:
+          python-version: 3.12
+
+      - name: install mkdocs
+        run: pip install mkdocs
+      
+      - name: Build
+        run: mkdocs build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
