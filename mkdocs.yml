@@ -1,1 +1,8 @@
-site_name: My Docs
+site_name: 'VKOSTYA lab'  # Название сайта
+docs_dir: docs
+nav:  # Настройка навигации
+  - Главная: index.md
+  - Обо мне: about/index.md
+  - Контакты: contact/index.md
+theme:
+  name: material  # Тема оформления
